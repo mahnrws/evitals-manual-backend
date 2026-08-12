@@ -1,0 +1,1324 @@
+Table of Contents | 
+1. Revision History	7
+2. Overview	9
+2.1. How to Read This Guide	10
+3. Login Window	11
+4. Forget Password	13
+5. Remember Me	15
+6. Dashboard — Super Admin	16
+7. Dashboard — Admin	19
+8. Dashboard — Practice Admin	21
+9. Dashboard — Provider	23
+10. Dashboard — Practice Caregiver	25
+11. Dashboard — System Caregiver	27
+12. Super Admin	29
+12.1. Practice List	31
+12.1.1. Browse & Search Practices	31
+12.1.2. Practice Tab	32
+12.1.3. Admins Tab	34
+12.1.4. Practice Detail — Users, Patients & Settings	35
+12.1.4.1. Provider	35
+12.1.4.2. Practice Caregiver	36
+12.1.4.3. Patient	37
+12.1.4.4. Schedule and Target Setting	40
+12.1.4.5. Import Patients	44
+12.1.4.6. System Caregivers	46
+12.2. Enrollment — Add & Configure a Practice	47
+12.3. System Admins	51
+12.4. System Caregiver	53
+12.5. Inventory Management	56
+12.6. Billing Management	60
+12.7. Patient Management	63
+12.8. Account Settings	67
+12.9. Care Management	80
+12.10. Calendar	83
+12.11. Programs	87
+12.12. Messages	92
+13. Admin	94
+13.1. Practice List	94
+13.1.1. Practice Admin	96
+13.1.2. Provider	97
+13.1.3. Practice Caregiver	98
+13.1.4. Patient	100
+13.1.5. System Caregivers	102
+13.1.6. Schedule and Target Setting	103
+13.1.7. Import Patients	109
+13.2. System Caregiver	111
+13.3. Inventory Management	114
+13.4. Billing Management	118
+13.5. Patient Management	123
+13.6. Care Management	127
+13.7. Calendar	128
+13.8. Messages	133
+13.9. Account Settings	135
+14. Practice Admin	147
+14.1. Practice List	148
+14.1.1. Practice	148
+14.1.2. Admins	150
+14.1.3. Providers	151
+14.1.4. Caregivers	153
+14.1.5. Patients	154
+14.1.6. System Caregivers	156
+14.1.7. Schedule & Targets	157
+14.1.8. Import Patients	162
+14.2. Patient Mgmt (Patient Management)	164
+14.2.1. Enroll Patient	164
+14.2.2. Lookup Patient	169
+14.2.3. Lookup Patient by RPM Date	170
+14.2.4. Lookup Patient by CCM Date	172
+14.3. Care Mgmt (Care Management)	174
+14.3.1. Follow Up Query	175
+14.4. Calendar	177
+14.4.1. Visit Type	177
+14.4.2. Working Hours	179
+14.4.3. Calendar	181
+14.5. Messages	183
+14.5.1. Messages	184
+14.6. Settings (Account Settings)	186
+14.6.1. Account	186
+14.6.2. Follow Up	188
+14.6.3. Calendar Permission	189
+14.6.4. Chat Access	191
+15. Provider	194
+15.1. Practice List	195
+15.1.1. Practice	195
+15.1.2. Practice Admins	197
+15.1.3. Providers	199
+15.1.4. Caregivers	200
+15.1.5. Patients	202
+15.1.6. System Caregivers	206
+15.1.7. Schedule & Targets	207
+15.1.8. Import Patients	211
+15.2. Patient Management	213
+15.2.1. Add a New Patient	214
+15.2.2. Look Up a Patient	219
+15.2.3. Look Up Patients by RPM Date	220
+15.2.4. Look Up Patients by CCM Date	222
+15.3. Care Management	224
+15.4. Calendar	225
+15.4.1. Manage Visit Types	227
+15.4.2. Set Working Hours	228
+15.4.3. Use the Calendar Grid	229
+15.5. Messages	231
+15.5.1. Send and Receive Messages	231
+15.6. Account Settings	233
+15.6.1. Manage Account Settings	233
+15.6.2. Manage Follow-Up Templates	235
+15.6.3. Manage Calendar Permission	237
+16. Practice Caregiver	239
+16.1. Practice (Caregiver Dashboard)	239
+16.2. Patient Management	242
+16.2.1. Add a New Patient	243
+16.2.2. Look Up a Patient	244
+16.2.3. Look Up Patients by RPM Date	246
+16.2.4. Look Up Patients by CCM Date	247
+16.3. Care Management	249
+16.3.1. Run a Follow-Up Query	249
+16.4. Messages	250
+16.4.1. Send and Receive Messages	251
+16.5. Account Settings	252
+16.5.1. Manage Account Settings	253
+16.5.2. Manage Follow-Up Templates	254
+17. System Caregiver	256
+17.1. Practice List	256
+17.2. Patient Management	258
+17.2.1. Open the Patient Management Menu	259
+17.2.2. Look Up a Patient	260
+17.2.3. Look Up Patients by RPM Date	261
+17.2.4. Look Up Patients by CCM Date	263
+17.3. Care Management	264
+17.3.1. Run a Follow-Up Query	265
+17.4. Messages	266
+17.4.1. Send and Receive Messages	266
+17.5. Account Settings	268
+17.5.1. Manage Account Settings	268
+17.5.2. Manage Follow-Up Templates	270
+
+1. Revision History | 
+Every material change to this guide is captured below. Restructuring the document into HTA form (this revision) is a documentation-only change — the underlying product screens are unchanged.
+Version | Date | Author | Description of Change
+1.0 | Nov 2026 | eVitals Team | Initial preview — Super Admin: Practice List and all tabs.
+1.1 | Nov 2026 | eVitals Team | Added Import Patients.
+1.2 | Nov 2026 | eVitals Team | Added Enrollment (Add Practice).
+1.3 | Nov 2026 | eVitals Team | Added Admins, Caregivers, Inventory, Billing, Patient Management.
+1.4 | Nov 2026 | eVitals Team | Added Care Management, Calendar Settings, Programs.
+1.5 | Nov 2026 | eVitals Team | Added Permission, Email Logs, Mobile App Access — Super Admin role complete.
+1.6 | Nov 2026 | eVitals Team | Restructured entire guide as Hierarchical Task Analysis; live-linked TOC.
+1.7 | Aug 2026 | eVitals Team | Super Admin volume aligned: Settings module added (section 12.1), Permission / Email Logs / Mobile App renumbered, Steps added to every subtask, step numbering restarted per task, cross-references corrected and unsupported glyphs replaced.
+1.8 | Aug 2026 | eVitals Team | Document restructured to the approved module-first outline: Login Window, Forget Password and Remember Me split out; a dedicated Dashboard chapter per role; a consolidated Account Settings chapter with one sub-section per role; and one chapter per role (Super Admin, Admin, Practice Admin, Provider, Practice Caregiver, System Caregiver) with Practice List, Provider, Practice Caregiver, Patient, Schedule and Target Setting, Import Patients, Patient Management, Account Settings, Roles or Permission and Email Logs sub-sections. Every chapter now opens with a role privileges summary and every module section carries a View / Add / Edit / Delete privileges table verified against the screenshots.
+
+2. Overview | 
+eVitals is a Remote Patient Monitoring (RPM) and Chronic Care Management (CCM) platform. It gives practices a single workspace to enroll patients, capture vitals from connected devices, run scheduled follow-ups, and produce billing-ready evidence of service time.
+System roles
+Super Admin — platform-wide operator; provisions practices, admins, and programs (this volume).
+Admin — cross-practice operator for a customer organisation.
+Practice Admin — manages a single practice, its clinicians and patients.
+Provider — clinician who reviews vitals and signs off billing.
+Practice Caregiver — practice-employed caregiver running follow-ups.
+System Caregiver — eVitals-employed shared caregiver serving multiple practices.
+Patient — end user of the mobile companion app.
+
+2. Overview | 2.1. How to Read This Guide
+This guide is written as a Hierarchical Task Analysis (HTA). Every product feature is decomposed as follows:
+Level | Meaning | Document Element
+Module | A top-level capability (e.g. Programs, Billing). | Heading 1  —  "7. Practice List"
+Sub-module | A screen or workflow inside the module. | Heading 2  —  "7.1 Practice List Dashboard"
+Task | A distinct goal a user pursues on that screen. | Heading 3  —  "7.1.3 Open a Practice Detail"
+Steps | Ordered actions required to complete the task. | Numbered list under "Steps"
+UI Reference | Every visible field / control on the screen. | Two-column table under "UI Reference"
+Task meta-box
+Each task begins with a colored meta-box carrying:
+Goal — the outcome the actor is trying to achieve.
+Actor — the role(s) permitted to perform the task.
+Access Path — the exact click-through from the sidebar (e.g. Sidebar → Programs → + Add Program).
+Preconditions — what must be true before starting.
+Outcome — what changes when the task completes successfully.
+
+6. Dashboard — Super Admin | 
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Platform-wide Enrollment Summary (Total Practices / Providers / Patients) and full sidebar.
+Add | Yes | Drill into any module from the sidebar to create practices, users, programs and inventory.
+Edit | Yes | Every module reachable from the sidebar is editable for this role.
+Delete | Yes | Delete is available inside the individual modules (Admins, Caregivers, Inventory, Programs).
+Drill down | Yes | Click a practice row or a summary card to open the underlying record.
+Purpose: The Super Admin dashboard is the platform-wide operations console. It aggregates enrollment counts and gives one-click access to every management module in the left sidebar.
+Actor | Super Admin
+Access Path | Sign in as Super Admin → default landing view
+Review Enrollment Summary
+Purpose: Understand platform-wide reach at a glance.
+Steps
+Sign In as Super Admin: Sign in as Super Admin.
+Read Summary Cards: Read the three summary cards at the top of the workspace.
+Drill Into a Practice: Use the numbers as an entry point into deeper modules (e.g. click a practice row to drill in).
+[Screenshot placeholder]
+Figure 6-1 — Super Admin landing dashboard with Enrollment Summary.
+UI Reference
+Field / Control | Description
+Total Practices | Number of practices provisioned on the platform.
+Total Patients | Aggregate patient count across all practices.
+Total Programs | Count of care programs configured (typically CCM & RPM).
+Navigate the Sidebar
+Purpose: Reach any Super Admin capability in one click.
+Steps
+Locate the Sidebar: The sidebar is pinned to the left of every Super Admin screen.
+Expand a Module: Click a module (for example Patient Mgmt) to reveal its sub-items.
+Open a Screen: Click the sub-item to load the workspace in the main pane.
+Watch for Red Dots: A red dot marks a module with items waiting for attention.
+Notes
+Enrollment (section 12.1.4), Admins (section 12.2), Caregivers (section 12.3), Inventory (section 12.4), Billing (section 12.5), Patient Mgmt (section 12.6), Care Mgmt (section 12.10), Calendar (section 12.11), Programs (section 12.12), Settings (section 12.1), Permission (section 12.8), Email Logs (section 12.9) and Mobile App (section 12.13) are all reachable from the persistent left sidebar.
+Red dots indicate modules with pending items (e.g. Patient Mgmt, Care Mgmt).
+
+10. Dashboard — Practice Caregiver | 
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Assigned patient roster with RPM / CCM program statistics.
+Add | Yes | New patients via the 3-step enrolment wizard.
+Edit | Yes | Patient demographics and follow-up records.
+Delete | No | Not exposed to this role.
+Manage practice users | No | No access to the Admins / Providers / Caregivers tabs.
+Caregiver Dashboard (patient roster &amp; program stats)
+Purpose: Land on the assigned practice and review the patient panel with CCM / RPM enrolment counts and pending billing.
+Actor | Practice Caregiver
+Precondition | The caregiver is signed in and assigned to at least one practice.
+Outcome | A filtered patient list is visible with vitals, service time, and billing status per patient.
+Step 1. Sign in as a Practice Caregiver — the workspace lands on the practice header (e.g. “Amir Mobile Test Practices”) with the CCM / RPM enrolment counts under the title.
+Step 2. Read the KPI strip: Total Patients, Active Care Plan (provider approved), Complex Care Plan (attested complex CCM), Items Pending Review (care plan changes awaiting provider), and CPT Billing (99490 / 99491 / 99439 counters).
+Step 3. Use the Search patients by name… box or the All Status filter to narrow the list; click CCM or RPM to switch program context, or + Add Patient to launch the enrolment wizard.
+Step 4. For any row, click the eye icon to open the patient chart, or the pencil icon to edit that patient — the row also surfaces DOB, chronic conditions, last activity, service time, and billing state (e.g. Pending).
+[Screenshot placeholder]
+Figure 10-1 — Practice Caregiver dashboard: KPI strip and patient roster.
+
+12. Super Admin | 
+Role privileges at a glance
+Page / Module | View | Add | Edit | Delete
+Practice List / Practice detail | Yes | Yes | Yes | Deactivate only
+Practice Admin | Yes | Yes | Yes | Yes
+Provider | Yes | Yes | Yes | Yes
+Practice Caregiver | Yes | Yes | Yes | Yes
+Patient | Yes | Yes | Yes | Yes
+System Caregivers (Within Practice) | Yes | Yes | Yes | Yes
+Schedule and Target Setting | Yes | Not applicable | Yes | No
+Import Patients | Yes | Yes | No | No
+System Admin | Yes | Yes | Yes | Yes
+System Caregivers (General) | Yes | Yes | Yes | Yes
+Inventory Management | Yes | Yes | Yes | Yes
+Billing Management | Yes | No | No | No
+Patient Management | No | No | No | No
+Account Settings | Yes | Not applicable | Yes | No
+Roles or Permission | Yes | Yes | Yes | Custom roles only
+Email Logs | Yes | No | No | No
+Care Management | Yes | No | No | No
+Calendar | Yes | Yes | Yes | Yes
+Programs | Yes | Yes | Yes | Yes
+Mobile App Access | Yes | No | Toggle | No
+The Super Admin is the platform-level operator. This chapter documents every screen the role can reach, grouped by module. Each module is a sub-section; each task inside a module carries its own Goal / Actor / Access Path / Preconditions / Outcome meta-box and numbered steps.
+
+12. Super Admin | 12.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Master registry of every practice on the platform.
+Add | Yes | Enrollment → + Add Practice creates a new practice.
+Edit | Yes | Open a practice and edit its profile, settings and billing cycles.
+Delete | No | Practices are deactivated, not deleted, from the UI.
+Search / filter | Yes | Search box plus status filter over the practice grid.
+Drill down | Yes | Click a row or the eye icon to open the practice workspace.
+Purpose: Practice List is the master registry of every practice on the platform. Each row can be drilled into to reveal nine tabs covering primary contact, staff, patients, RPM specifics, and scheduling.
+Actor | Super Admin
+Access Path | Sidebar → (default landing) or Sidebar → Practice
+
+12. Super Admin | 12.1. Practice List
+Opening a practice from the Practice List reveals the tabbed practice workspace. Each tab is documented below with the Super Admin privileges that apply to it.
+12.1.4.1. Provider
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Providers grid with status, NPI, contact and action icons; eye icon opens the profile.
+Add | Yes | + Add Provider registers a clinician against the practice.
+Edit | Yes | Pencil icon edits the provider record.
+Delete | Yes | Trash icon removes the provider from the practice.
+Purpose: Maintain the clinician roster for the practice.
+Access Path | Practice detail → Providers tab
+Steps
+Open the Providers Tab: From the practice detail, click the Providers tab.
+Review the Roster: Check each clinician’s name, credentials and contact details.
+Add a Provider: Click + Add Providers, complete the form and click Save.
+Update or Deactivate: Use the row action icons to edit a provider or set them inactive.
+[Screenshot placeholder]
+Figure 12.1.4.1-1 — Providers tab.
+UI Reference
+Field / Control | Description
+Name / Credentials | Clinician identity.
+Contact Info | Email and phone.
++ Add Providers | Opens the provider creation form.
+12.1.4.2. Practice Caregiver
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Practice Caregivers grid with contact details; eye icon opens the profile.
+Add | Yes | + Add Caregiver enrolls a practice-employed caregiver.
+Edit | Yes | Pencil icon edits the caregiver record.
+Delete | Yes | Trash icon removes the caregiver from the practice.
+Assign to patients | Yes | Caregivers become selectable in the patient enrolment wizard.
+Purpose: Maintain practice-employed caregivers.
+Access Path | Practice detail → Caregivers tab
+Steps
+Open the Caregivers Tab: From the practice detail, click the Caregivers tab.
+Review Practice Caregivers: Check who is employed by this practice and their assigned provider.
+Add a Caregiver: Click + Add Caregiver, complete name, email, phone and provider, then Save.
+Update or Remove: Use the row action icons to edit or remove a caregiver.
+[Screenshot placeholder]
+Figure 12.1.4.2-1 — Caregivers tab.
+12.1.4.3. Patient
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Patients tab in both CCM and RPM views with summary cards and CPT counters.
+Add | Yes | Add Patient opens the enrolment wizard.
+Edit | Yes | Pencil icon edits demographics; eye icon opens the patient dashboard.
+Delete | Yes | Trash icon removes a patient record where exposed.
+Switch RPM / CCM view | Yes | Toggle at the top-right of the Patients tab.
+Review readings | Yes | Open trend views from the vitals chips and heart icons.
+Purpose: Inspect CCM patients enrolled at the practice.
+Access Path | Practice detail → Patients tab → CCM
+Steps
+Open the Patients Tab: From the practice detail, click the Patients tab.
+Switch to CCM: Select the CCM view above the grid.
+Review Enrollment Data: Check DOB, chronic conditions and accrued service time per patient.
+Check Billing Status: Read the Billing column (In Progress / Ready / Billed) for the current cycle.
+[Screenshot placeholder]
+Figure 12.1.4.3-1 — Patients tab, CCM view.
+UI Reference
+Field / Control | Description
+DOB | Date of birth.
+Chronic Conditions | Coded conditions justifying CCM enrollment.
+Service Time | Minutes accrued in the current billing cycle.
+Billing | Cycle status (In Progress / Ready / Billed).
+Purpose: Inspect RPM patients and latest vitals.
+Access Path | Practice detail → Patients tab → RPM
+Steps
+Open the Patients Tab: From the practice detail, click the Patients tab.
+Switch to RPM: Select the RPM view above the grid.
+Review Latest Vitals: Check systolic, diastolic, pulse, glucose and weight for each patient.
+Spot Coverage Gaps: Sort by the latest reading to find patients who have stopped uploading.
+[Screenshot placeholder]
+Figure 12.1.4.3-2 — Patients tab, RPM view.
+UI Reference
+Field / Control | Description
+Systolic / Diastolic / Pulse | Latest BP and heart-rate reading.
+Glucose | Latest glucose reading.
+Weight | Latest weight reading.
+12.1.4.4. Schedule and Target Setting
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Daily Schedule plus Blood Pressure, Blood Glucose and Weight target bands.
+Add | Not applicable | Targets are configured, not created as new records.
+Edit | Yes | Change reading windows and target ranges, then Save.
+Delete | No | Targets cannot be deleted; reset them to the default values instead.
+Purpose: Define the practice's daily schedule and per-window BP target ranges.
+Access Path | Practice detail → Schedule & Targets tab
+12.1.3.4.1. Daily Schedule:
+Open Schedule & Targets: Open Schedule & Targets.
+Access Path | Schedule & Targets tab → Daily Schedule
+Set Daily Schedule Times: Set Wake-up, Breakfast, Lunch, Dinner, Bedtime times in the Daily Schedule.
+[Screenshot placeholder]
+Figure 12.1.4.4-1 — Schedule and Target Setting.
+3.Save Changes: Save.
+12.1.3.4.2. Blood Pressure:
+Access Path | Schedule & Targets tab → Blood Pressure
+Set BP Target Ranges: For each measurement window (Wake-up, Morning, Noon, Afternoon, Evening) set the target Systolic and Diastolic ranges.
+[Screenshot placeholder]
+Figure 12.1.4.4-2 — Schedule and Target Setting.
+Save Changes: Save.
+12.1.3.4.3. Blood Glucose:
+Access Path | Schedule & Targets tab → Blood Glucose
+Set BG Target Ranges: For each measurement window (Wake-up, Morning, Noon, Afternoon, Evening) set the target Systolic and Diastolic ranges.
+[Screenshot placeholder]
+Figure 12.1.4.4-3 — Schedule and Target Setting.
+Save Changes: Save.
+12.1.3.4.3. Weight:
+Access Path | Schedule & Targets tab → Weight
+Set Weight Target Ranges: For each measurement window (Morning, Afternoon, Evening) set the target Weight and Body Fat ranges.
+[Screenshot placeholder]
+Figure 12.1.4.4-4 — Schedule and Target Setting.
+Save Changes: Save.
+12.1.4.5. Import Patients
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Import Patients tab with template, upload area and import history.
+Add | Yes | Upload a completed spreadsheet to bulk-create patients.
+Edit | No | Corrections are made on the patient record after import.
+Delete | No | Not available from the import tab.
+Download template | Yes | Download the sample spreadsheet before uploading.
+Validation review | Yes | Rejected rows are listed with the reason for failure.
+Purpose: Upload many patients at once from a CSV/Excel file.
+Access Path | Practice List → row → Import icon (or Practice detail → Import Patients)
+Steps
+Open Import Patients Screen: Open the Import Patients screen for the target practice.
+Select Provider: Select the receiving Provider from the dropdown.
+Select Caregiver: Select the receiving Caregiver from the dropdown.
+Upload Patient File: Click Upload CSV/Excel and choose the prepared file.
+Import & Review Errors: Click Import to run the upload; review any row-level errors returned.
+[Screenshot placeholder]
+Figure 12.1.4.5-1 — Add Bulk Patients form.
+UI Reference
+Field / Control | Description
+Provider | Clinician the imported patients will be assigned to.
+Caregiver | Caregiver the imported patients will be assigned to.
+Upload CSV/Excel | File picker; template must match the eVitals import schema.
+Import / Cancel | Runs the upload or discards the selection.
+12.1.4.6. System Caregivers
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | System Caregivers assigned to the practice with contact details.
+Add | No | Create System Caregivers from the Caregivers module (section 13.3).
+Edit | No | Edit from the Caregivers module, not from this tab.
+Delete | No | Remove from the Caregivers module.
+Purpose: See which platform-level (System) caregivers currently serve the practice.
+Access Path | Practice detail → System Caregivers tab
+Steps
+Open the System Caregivers Tab: From the practice detail, click the System Caregivers tab.
+Review Assignments: Check which shared caregivers currently serve this practice.
+Handle the Empty State: If no rows are shown, assign a caregiver from Sidebar → Caregivers.
+[Screenshot placeholder]
+Figure 12.1.4.6-1 — System Caregivers tab (empty state shown).
+
+12. Super Admin | 12.2. Enrollment — Add & Configure a Practice
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Enrollment form, practice settings and care-program billing cycles.
+Add | Yes | + Add Practice creates the practice and its primary contact.
+Edit | Yes | Update practice settings and billing cycle dates, then Save.
+Delete | No | Practices are deactivated rather than deleted.
+Purpose: Enrollment is where new practices are provisioned on eVitals. A single scrollable form captures Practice Detail, Admin Detail, Practice Settings, and Care Program Billing Cycles.
+Actor | Super Admin
+Access Path | Sidebar → Enrollment → + Add Practice
+Purpose: Provision a new practice and its first admin in one form.
+Preconditions | You have the practice's tax ID, primary address, and the intended admin's email.
+Outcome | A new practice appears in the Practice List; the admin receives a welcome email.
+Steps
+Navigate to Add Practice: Sidebar → Enrollment → + Add Practice.
+Fill Practice Details: Fill Practice Detail: name, type, status, tax ID, email, address.
+Fill Admin Details: Fill Admin Detail: first/last name, email, phone, username, password (meeting criteria), 2FA toggle.
+Choose Email Preferences: Under Practice Settings, choose Email Notification preferences.
+Set Billing Cycle Dates: Under Care Program Billing Cycles, set RPM and CCM start date, billing cycle length (days), and end date.
+Save Practice: Click Save.
+[Screenshot placeholder]
+Figure 12.2-1 — Add Practice: Practice Detail & Admin Detail.
+Purpose: Turn on transactional email notifications for the practice.
+Steps
+Scroll to Practice Settings: On the Add / Edit Practice form, scroll to the Practice Settings panel.
+Review Password Criteria: Confirm the length, case, digit and symbol rules shown live under the password field.
+Set Two-Factor Authentication: Turn the 2FA toggle on to require an OTP at every admin sign-in.
+Choose Email Notifications: Enable the enrollment, billing and alert emails the practice should receive.
+[Screenshot placeholder]
+Figure 12.2-2 — Practice Settings and password criteria.
+UI Reference
+Field / Control | Description
+Password Criteria | Length, case, digit, and symbol requirements enforced live.
+2FA | Toggle to require OTP on every sign-in for the admin.
+Email Notifications | Toggles for enrollment, billing, and alert emails.
+Purpose: Bind RPM and CCM billing windows to the practice.
+Steps
+Scroll to Care Program Billing Cycles: On the Add / Edit Practice form, scroll to the billing cycle panel.
+Set the RPM Cycle: Enter the RPM start date and cycle length in days; the end date is computed for you.
+Set the CCM Cycle: Repeat for CCM if the practice is enrolled in that program.
+Save the Practice: Click Save to persist the practice and its billing cycles.
+[Screenshot placeholder]
+Figure 12.2-3 — Care Program Billing Cycles and Save action.
+UI Reference
+Field / Control | Description
+Start Date | First day of the billing cycle for that program.
+Days | Cycle length (e.g. 30).
+End Date | Auto-computed from Start Date + Days.
+Save / Cancel | Persist the practice or discard.
+
+12. Super Admin | 12.6. Billing Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Platform billing report and per-practice billing detail with CPT breakdown.
+Add | No | Billing rows are generated by the system, not added by hand.
+Edit | No | Figures are derived from readings and service time and are not editable.
+Delete | No | Not available.
+Export / download | Yes | Download the billing report for the selected practice and cycle.
+Filter by cycle | Yes | Choose the billing window before reading the report.
+Purpose: The Billing module rolls up service-time evidence per practice per program and marks each practice's readiness to invoice for the current cycle.
+Actor | Super Admin
+Access Path | Sidebar → Billing
+Purpose: See which practices are ready to bill for the current cycle.
+Steps
+Open the Billing Module: Click Billing in the left sidebar.
+Review Practice Rows: Check the per-program patient counts for each practice.
+Check the Billing Period: Confirm the start and end dates of the cycle being reported.
+Read the Status: Use the Status column (In Progress / Ready / Billed) to decide what to invoice.
+[Screenshot placeholder]
+Figure 12.6-1 — Practice List for Billing Report.
+UI Reference
+Field / Control | Description
+Practice | Practice name.
+Program Enrolled | Per-program patient counts.
+Billing Period | Start and end dates for the cycle.
+Status | In Progress / Ready / Billed.
+Purpose: Drill from the practice roll-up into the per-patient billing evidence for one practice.
+Actor | Super Admin
+Access Path | Sidebar → Billing → practice row → eye icon
+Preconditions | The practice has at least one program with an open billing cycle.
+Outcome | The per-patient billing report for the selected cycle is displayed and can be exported.
+Steps
+Open the Billing Module: Click Billing in the left sidebar to list every practice.
+Select a Practice: Click the eye icon on the practice row you want to bill.
+Choose the Billing Period: Confirm or change the billing period shown at the top of the report.
+Review Patient Rows: Check each patient’s accrued service time, reading counts and CPT eligibility.
+Export the Report: Use the export action to download the report for submission.
+[Screenshot placeholder]
+Figure 12.6-2 — Billing report for a single practice.
+
+12. Super Admin | 12.7. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Look Up Patient (general), by RPM Date and by CCM Date.
+Add | Yes | Add New Patient from the Patient Management menu.
+Edit | Yes | Open a result row to edit demographics or program enrolment.
+Delete | Yes | Delete is available on the patient record where exposed.
+Export results | Yes | Export the filtered result set.
+Purpose: Patient Management is the cross-practice patient search workspace. It exposes three lookups depending on how the operator wants to slice results.
+Actor | Super Admin
+Access Path | Sidebar → Patient Management
+Purpose: Understand what the three sub-items do.
+Steps
+Open Patient Management: Click Patient Management in the left sidebar.
+Review the Three Lookups: Read the sub-items: Lookup Patient, Lookup Patient (by RPM date) and Lookup Patient (by CCM date).
+Choose a Lookup: Pick the lookup that matches the question you are answering.
+[Screenshot placeholder]
+Figure 12.7-1 — Patient Management sidebar submenu.
+UI Reference
+Field / Control | Description
+Lookup Patient | General patient search across practices.
+Lookup Patient (by RPM date) | Patients grouped by their RPM service date range.
+Lookup Patient (by CCM date) | Patients grouped by their CCM service date range.
+Purpose: Find a patient by name or by practice/provider/caregiver.
+Steps
+Navigate to Lookup Patient: Sidebar → Patient Management → Lookup Patient.
+Filter Patient Search: Filter by any combination of Name, Practice, Provider, Caregiver, Status.
+Search & Review Results: Click Search; review the result grid.
+[Screenshot placeholder]
+Figure 12.7-2 — Look Up Patient.
+Purpose: Find RPM patients seen inside a given service window.
+Steps
+Navigate to RPM Lookup: Sidebar → Patient Management → Lookup Patient (by RPM date).
+Pick Service Date Range: Pick a service date range.
+Search RPM Records: Search; grid returns RPM-specific columns (vitals coverage, last reading date, service time).
+[Screenshot placeholder]
+Figure 12.7-3 — Look Up Patient (by RPM date).
+Purpose: Find CCM patients seen inside a given service window.
+Steps
+Navigate to the CCM Lookup: Sidebar → Patient Management → Lookup Patient (by CCM date).
+Pick a Service Date Range: Select the cycle window you want to report on.
+Run the Search: Click Search to return CCM patients seen inside that window.
+Review Results: Check chronic conditions and the billing status of each returned row.
+[Screenshot placeholder]
+Figure 12.7-4 — Look Up Patient (by CCM date).
+UI Reference
+Field / Control | Description
+Service Date Range | Cycle window for the lookup.
+Chronic Conditions | Coded conditions per patient.
+Billing | Cycle status for the returned rows.
+
+12. Super Admin | 12.11. Programs
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Care Program list with identity, billing / coding and clinical requirements.
+Add | Yes | + Add Program runs the three-step program wizard.
+Edit | Yes | Edit any program section and save.
+Delete | Yes | Delete a care program that is not in use.
+Purpose: The Programs module defines the care programs practices enroll patients into. Each program bundles a category, billing codes, reimbursement values, clinical requirements, and a visual identity.
+Actor | Super Admin
+Access Path | Sidebar → Programs
+Purpose: Review the current catalogue and CPT rollups.
+Steps
+Open the Programs Module: Click Programs in the left sidebar.
+Read the Summary Cards: Check total programs, billing codes and categories.
+Review Program Rows: Inspect each program’s category, CPT codes and reimbursement values.
+Start a New Program: Click + Add Program to open the Add Care Program form (section 12.12).
+[Screenshot placeholder]
+Figure 12.11-1 — Care Programs list with summary cards.
+UI Reference
+Field / Control | Description
+Total Programs | Number of configured programs.
+Billing Codes | Total CPT codes across all programs.
+Categories | Distinct program categories.
++ Add Program | Opens the Add Care Program form (section 12.12).
+Purpose: Name and visually identify a new care program.
+Steps
+Open Add Care Program: Sidebar → Programs → + Add Program.
+Enter the Short Name: Type the compact label used on badges (for example CCM or RPM).
+Choose a Category: Select the program family from the Category dropdown.
+Enter the Full Name and Description: Give the long-form name and describe the purpose and scope.
+Pick a Badge Colour: Choose the colour chip used on cards and badges.
+Continue: Move on to the Billing & Coding section (section 12.12).
+[Screenshot placeholder]
+Figure 12.11-2 — Add Care Program: Program Identity.
+UI Reference
+Field / Control | Description
+Short Name | Compact label (e.g. CCM, RPM).
+Category | Program family.
+Full Name | Long-form name shown to clinicians.
+Description | Purpose and scope.
+Badge Color | Color chip used on badges and cards.
+Purpose: Attach CPT codes and reimbursement values.
+Steps
+Open Billing & Coding: Scroll to the Billing & Coding section of the Add Care Program form.
+Choose the Program Icon: Select the icon shown across dashboards.
+Enter CPT Codes: Type the comma-separated CPT codes (for example 99457, 99458).
+Select the Reimbursement Type: Choose Fixed, Per-minute or Tiered.
+Enter the Average Monthly Reimbursement: Record the planning value in dollars.
+[Screenshot placeholder]
+Figure 12.11-3 — Add Care Program: Billing & Coding.
+UI Reference
+Field s/ Control | Description
+Program Icons | Iconography used across dashboards.
+CPT Codes | Comma-separated codes (e.g. 99457, 99458).
+Reimbursement Type | Fixed / Per-minute / Tiered.
+Avg. Monthly Reimbursement ($) | Planning input for revenue estimates.
+Purpose: Bind qualifying diagnoses and consent policy.
+Steps
+Open Clinical Requirements: Scroll to the Clinical Requirements section of the form.
+Select Qualifying Diagnoses: Search and tick the ICD-10 codes that qualify a patient for the program.
+Set the Minimum Enrollment Period: Enter the minimum number of days a patient must stay enrolled.
+Set the Consent Policy: Choose whether patient consent is required before enrollment.
+Save the Program: Click Save Program; the program appears in the catalogue.
+[Screenshot placeholder]
+Figure 12.11-4 — Add Care Program: Clinical Requirements.
+UI Reference
+Field / Control | Description
+ICD-10 Diagnosis Codes | Search and select qualifying diagnoses, filtered by category.
+Min. Enrollment Period (Days) | Minimum days a patient must remain enrolled.
+Patient Consent Required * | Consent policy for enrolling patients.
+Save Program / Cancel | Persist the program or discard.
+
+13. Admin | 
+The admin is a cross-practice operator. The role works inside the practices assigned to it and holds the same day-to-day management rights as the Super Admin, minus platform provisioning (practice enrollment, email logs and mobile app access).
+Role privileges at a glance
+Page / Module | View | Add | Edit | Delete
+Practice List / Practice detail | Yes | No | Yes | No
+Provider | Yes | Yes | Yes | Yes
+Practice Caregiver | Yes | Yes | Yes | Yes
+Patient | Yes | Yes | Yes | Yes
+Schedule and Target Setting | Yes | Not applicable | Yes | No
+Import Patients | Yes | Yes | No | No
+System Caregiver | Yes | Yes | Yes | Yes
+Inventory Management | Yes | Yes | Yes | Yes
+Billing Management | Yes | No | No | No
+Patient Management | Yes | No | Yes | No
+Account Settings | Yes | Not applicable | Yes | No
+Care Management | Yes | No | No | No
+Calendar | Yes | Yes | Yes | Yes
+
+13. Admin | 13.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Patients tab in both CCM and RPM views with summary cards and CPT counters.
+Add | Yes | Add Patient opens the enrolment wizard.
+Edit | Yes | Pencil icon edits demographics; eye icon opens the patient dashboard.
+Delete | Yes | Trash icon removes a patient record where exposed.
+Switch RPM / CCM view | Yes | Toggle at the top-right of the Patients tab.
+Review readings | Yes | Open trend views from the vitals chips and heart icons.
+Purpose: Get a vitals-first view of the practice's patients with device readings, upload status, and CPT billing counters.
+Actor | System Admin
+Access Path | Dashboard > <Practice> > Patients
+Preconditions | Practice detail page is open.
+Outcome | Five summary cards appear (Total Patient, Recent Uploads, Missed Uploads, Abnormal Readings, CPT Billing) and a patient table shows Status, Vitals badges (BP / WT / BG), Name, Systolic, Diastolic, Pulse, Glucose, Weight, Last Upload, # Readings, Time, Actions. RPM Billing Dates are shown top-right.
+[Screenshot placeholder]
+Figure 13.1.4-1 — Patient.
+Steps
+Open Patients Tab: Click the Patients tab.
+Review KPI Cards: Read the five KPI cards; click 'click to view all' under any card to drill in.
+Review CPT Billing Counts: Review CPT Billing counters (99453 / 99445 / 99454 and +4 more).
+Filter RPM Patients: Search patients by name or filter by All Status; click the RPM chip to filter to RPM patients.
+Inspect, Edit, or Remove Patient: Click the eye / pencil / trash on a patient row to inspect, edit, or remove.
+Add a Patient: Click Add Patient to enroll a new patient.
+The RPM Billing Dates range in the top-right of this tab reflects the practice's active RPM contract window.
+
+13. Admin | 13.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Import Patients tab with template, upload area and import history.
+Add | Yes | Upload a completed spreadsheet to bulk-create patients.
+Edit | No | Corrections are made on the patient record after import.
+Delete | No | Not available from the import tab.
+Download template | Yes | Download the sample spreadsheet before uploading.
+Validation review | Yes | Rejected rows are listed with the reason for failure.
+Purpose: Add multiple patients to a practice in a single upload by supplying a CSV / Excel file mapped to a chosen Provider and Caregiver.
+Actor | System Admin
+Access Path | Dashboard → Practice → Import Patients tab → Add Bulk Patients
+Preconditions | At least one Provider and one Caregiver exist on the practice; the CSV/Excel file follows the eVitals bulk-import template (patient demographics, contact, program assignment).
+Outcome | Valid rows create new patient records assigned to the selected provider and caregiver; invalid rows are reported back with a row-level error list.
+[Screenshot placeholder]
+Figure 13.1.7-1 — Import Patients.
+Field reference
+Field | Required | Description / Notes
+Provider | Yes | Dropdown listing active providers of the practice. Every imported patient is attached to this provider as the ordering clinician.
+Caregiver | Yes | Dropdown listing active caregivers of the practice. Every imported patient is attached to this caregiver for monitoring.
+CSV / Excel File | Yes | File picker accepting .csv, .xls, .xlsx. Uses the eVitals bulk template — download the sample from the help tooltip if the practice has never imported before.
+Steps
+Open the practice and click the Import Patients tab in the practice sub-navigation.
+In the Add Bulk Patients card, choose a Provider from the dropdown.
+Choose a Caregiver from the second dropdown.
+Click Upload CSV/Excel and select the prepared file; the chosen filename replaces the "No file chosen" placeholder.
+Click Import Patients to start processing. A confirmation toast reports how many rows succeeded and how many failed.
+If failures are reported, download the error file, correct the flagged rows and re-upload only the corrected subset.
+Click Cancel to abandon the import before submission.
+Notes
+Provider and Caregiver selections apply to every row in the file — split the file if patients need different assignments.
+The importer is idempotent by MRN; a duplicate MRN row is skipped rather than creating a second patient.
+Program-enrolment columns in the file (CCM/RPM start dates) must fall within the practice’s active billing cycle or the row is rejected.
+
+13. Admin | 13.4. Billing Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Per-practice billing report with patient status chips and CPT progression.
+Add | No | Generated by the system.
+Edit | No | Not editable.
+Delete | No | Not available.
+Export / download | Yes | Download the report for the selected practice and cycle.
+Purpose: Review the current billing cycle and patient billing statuses for every practice.
+Actor | System Admin
+Access Path | Sidebar → Billing
+Preconditions | At least one practice has an active care program with a defined billing period.
+Outcome | The Practice List For Billing Report is displayed with ID, Status, Name, Phone 1, Email, Program Enrolled, Billing Period Date and Patients Status columns.
+[Screenshot placeholder]
+Figure 13.4-1 — Billing Management.
+Steps
+Open Billing Tab: Click Billing in the left sidebar.
+Search Billing by Practice: Use the Search box to filter by practice name, ID or email.
+Sort Billing List: Sort by Status or any column header.
+Read Program Enrollment: Read the Program Enrolled chip (e.g. RPM (46)) to see how many patients are enrolled in each program for that practice.
+Open Billing Report: Click the eye icon in the View Report column to open the Billing & Reports page for that practice, which opens on the RPM tab alongside a CCM tab (see below).
+Change Billing Period: Click the calendar icon to change the billing period date range before generating the report.
+Page Through Billing List: Change Show entries or use the pager to navigate.
+Audit Billing Activity: Click Event Logs (top of table) to audit billing activity.
+Notes
+Billing Period Date shows the current cycle window (start ~ end) for that practice’s care program.
+The Patients Status chips (T / A / P / L) summarize Total / Active / Pending / Locked counts for quick triage.
+Purpose: Understand what the T / A / P / L badges mean before drilling into a report.
+Actor | System Admin
+Access Path | Sidebar → Billing → Patients Status column
+Preconditions | A billing period exists for the practice.
+Outcome | The reviewer can quickly identify practices that need billing follow-up.
+Steps
+Read Patient Status Chips: On any row, read the four colored chips under Patients Status.
+View Underlying Patient List: Hover / open the report to see the underlying patient list.
+Notes
+T = Total patients in the billing period; A = Active (meeting service-time thresholds); P = Pending (partial data / awaiting review); L = Locked (billing already finalized).
+Zero-count chips are still shown for context (e.g. L 0 means no billing has been finalized yet for the cycle).
+Purpose: Drill into a practice’s per-patient billing detail for the selected cycle, split into an RPM tab and a CCM tab.
+Actor | System Admin
+Access Path | Sidebar → Billing → eye icon (View Report) on a practice row
+Preconditions | The practice has at least one patient enrolled in RPM or CCM for the selected billing period.
+Outcome | A Billing & Reports → [Practice Name] page opens, showing the RPM Billing Period date range and an RPM Report filter panel above a per-patient results grid, with a CCM tab of the same layout alongside it.
+[Screenshot placeholder]
+Figure 13.4-2 — Billing Management.
+Steps — RPM Report Tab
+Open the RPM Tab: The RPM tab is selected by default when the practice’s billing report opens; the header shows RPM Billing Period: mm/dd/yyyy ~ mm/dd/yyyy.
+Filter by CPT Code, Patient or Insurance: Use the CPT Code and Patient Name dropdowns and the Insurance field to narrow the results.
+Filter by Service Time or Date Range: Enter a minimum Service Time and / or pick an RPM Service Date Range (mm/dd/yyyy ~ mm/dd/yyyy) with the calendar pickers.
+Filter by Device, Measurement Days or Status: Use the Model #, Serial #, Measurement Days and Status fields to narrow further.
+Filter by Caregiver, Provider or Report Data: Pick a Caregiver and / or Provider, and use Select Data for the Report to choose which fields are included in an export.
+Run, Reset, Print, Export or Email: Click Query to load results, Reset to clear all filters, Print for a printable view, Export (dropdown) to download the report, or Email to send it.
+Review the RPM Results Grid: Review each row: #, Status, Vitals, Patient Name, DOB, Modal #, Serial #, RPM Start Date, Upload Date/Time, Measurement Days, Service Time, Caregiver, Provider and Eligible CPT Codes.
+Search or Sort Results: Use the Search box (top-right of the grid) to filter the loaded rows, or click a column header such as Patient Name to sort.
+[Screenshot placeholder]
+Figure 13.4-3 — Billing Management.
+Steps — CCM Report Tab
+Switch to the CCM Tab: Click CCM next to RPM to switch tabs; the header updates to CCM Billing Period: mm/dd/yyyy ~ mm/dd/yyyy.
+Filter by CPT Code, Patient or Insurance: Use the CPT Code, Patient Name and Insurance fields to narrow the results, the same as on the RPM tab.
+Filter by Service Time, Date Range or Status: Enter a Service Time, pick a CCM Service Date Range and / or a Status.
+Filter by Caregiver, Provider or Report Data: Pick a Caregiver and / or Provider, and use Select Data for the Report for exports.
+Run, Reset, Print, Export or Email: Use the same Reset, Query, Print, Export and Email controls as the RPM tab.
+Review the CCM Results Grid: Review each row: #, Status, Patient Name, DOB, Clinical Min, Provider Min, Complexity, Billing Path, Caregiver, Provider and Eligible CPT Codes.
+Page Through Results: Use the Show N entries dropdown and the pager (bottom-right) to move through pages when the CCM roster is long.
+Notes
+Complexity (Non-Complex / Complex) and Billing Path on the CCM tab reflect the patient’s care-plan configuration for the cycle — they are not manually entered on this screen.
+Eligible CPT Codes on both tabs list every code the patient currently qualifies for in the billing period based on recorded service time and readings.
+Export and Email use whichever filters are currently applied, so narrow the results first if the report is being generated for someone outside this view.
+Status colors on both tabs follow the same convention as the Practice List (e.g. green = Active, red = Locked / needs attention).
+
+13. Admin | 13.5. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Look Up Patient (general), by RPM Date and by CCM Date.
+Add | No | Patients are enrolled from the practice Patients tab.
+Edit | Yes | Open a result row to edit the patient record.
+Delete | No | Not exposed in this module.
+Export results | Yes | Export the filtered result set.
+Purpose: Locate a patient across every practice using demographic and organizational filters.
+Actor | System Admin
+Access Path | Sidebar → Patient Management → Lookup Patient
+Preconditions | The user is signed in and has visibility to the target practice / provider.
+Outcome | A ranked patient list is displayed with Status, Vitals, Name, Systolic, Diastolic, Pulse, Glucose, Weight, Last Upload, # Readings and Time columns.
+[Screenshot placeholder]
+Figure 13.5-1 — Patient Management.
+[Screenshot placeholder]
+Figure 13.5-2 — Patient Management.
+Steps
+Open Lookup Patient: Click Patient Management in the sidebar, then choose Lookup Patient from the fly-out menu.
+Enter Search Criteria: Enter any combination of Last Name, First Name, and pick Practice, Provider, Caregiver and Status from the dropdowns.
+Run or Reset Search: Click Query to run the search, or Reset to clear the filters.
+Review Vitals Chips: Review results in the table — Vitals chips show which measurement types (BP, BG, WT) are being monitored.
+Filter Search Results: Use the Search box (top-right) for further in-table filtering.
+Notes
+Leaving all filters blank returns an empty grid; at least one filter must be supplied before Query runs.
+This screen shows the latest vital readings — for date-scoped billing views use 6.6.2 (RPM) or 6.6.3 (CCM).
+Purpose: Report RPM service activity for a practice over a chosen date range, including CPT eligibility.
+Actor | System Admin
+Access Path | Sidebar → Patient Management → Lookup Patient (by RPM date)
+Preconditions | The chosen practice has active RPM patients within the selected date range.
+Outcome | A patient table is displayed with Status, Vitals, Patient Name, DOB, Modal #, Serial #, RPM Start Date, Upload Date/Time, Measurement Days, Service Time and Eligible CPT Codes columns.
+[Screenshot placeholder]
+Figure 13.5-3 — Patient Management.
+Steps
+Open RPM Lookup: Click Patient Management in the sidebar, then choose Lookup Patient (by RPM date).
+Select a Practice: Select a Practice from the dropdown.
+Pick RPM Date Range: Pick an RPM Service Date Range (from ~ to).
+Load or Reset Results: Click Query to load results, or Reset to clear.
+Sort RPM Results: Sort by RPM Start Date or any other column via the column header.
+Print the Report: Click Print to send the report to the printer.
+Export the Report: Click Export to download in CSV / Excel format.
+Email the Report: Click Email to send the report to a recipient.
+Notes
+Measurement Days counts unique calendar days with at least one qualifying vital upload — this drives CPT code eligibility (99453 / 99454 / 99457 / 99458).
+Modal # and Serial # show the device model and serial actively assigned during the reporting window.
+Purpose: Report CCM service activity for a practice over a chosen date range with billing status.
+Actor | System Admin
+Access Path | Sidebar → Patient Management → Lookup Patient (by CCM date)
+Preconditions | The chosen practice has CCM-enrolled patients within the selected date range.
+Outcome | A patient table is displayed with Status, Patient Name, DOB, Chronic Conditions, Enrollment Date, Last Activity, Service Time, Eligible CPT Codes and Billing columns.
+[Screenshot placeholder]
+Figure 13.5-4 — Patient Management.
+Steps
+Open CCM Lookup: Click Patient Management in the sidebar, then choose Lookup Patient (by CCM date).
+Select a Practice: Select a Practice from the dropdown.
+Pick CCM Date Range: Pick a CCM Service Date Range (from ~ to).
+Load or Reset Results: Click Query to load results, or Reset to clear.
+Sort CCM Results: Sort by Enrollment Date or any other column.
+Distribute the Report: Click Print, Export or Email to distribute the report.
+Notes
+Billing = Pending means the patient qualifies but has not been billed for the current cycle; Locked means the billing has already been finalized.
+Chronic Conditions lists the ICD diagnoses that qualify the patient for CCM (e.g. Alzheimer’s Disease / Dementia, Arthritis).
+
+13. Admin | 13.6. Care Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Follow Up Query results across all practices.
+Add | No | Follow-up records come from patient activity.
+Edit | No | Not editable from the query screen.
+Delete | No | Not available.
+Run query | Yes | Set the filters and run the follow-up query.
+Drill to patient | Yes | Open a result row to reach the patient record.
+Purpose: Identify patients who require a follow-up call based on the most recent vital readings and demographic filters.
+Actor | System Admin
+Access Path | Sidebar → Care Management → Follow Up
+Preconditions | The user is signed in and has visibility to the target practice / provider.
+Outcome | A patient table is displayed showing Status, Vitals, Name, Systolic, Diastolic, Pulse, Glucose, Weight, Last Upload, # Readings, Time and Action columns.
+[Screenshot placeholder]
+Figure 13.6-1 — Care Management.
+Steps
+Open Follow-Up Query: Click Care Management in the sidebar, then choose Follow Up.
+Filter Follow-Up Criteria: Filter by Last Name, First Name, Practice, Provider, Caregiver and Status.
+Run or Reset Search: Click Query to run the search, or Reset to clear the filters.
+Review Activity Columns: Review results — the # Readings and Time columns highlight patients with recent activity that may warrant intervention.
+Log a Follow-Up Action: Use the Action column on each row to log a follow-up call, note or task.
+Notes
+Follow Up Query surfaces patients based on latest-reading thresholds and activity — combine with Patient Management reports for full billing context.
+Selecting a Caregiver filter narrows to that caregiver’s panel, which is useful for daily huddles.
+
+14. Practice Admin | 14.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Read the Primary Contact card: Facility, Email, Phone 1, Phone 2, Fax and the Status pill (Active shown in…
+Add | Yes | Use the Action-column icons on the row (eye / pencil / trash) — permitted for this role.
+Edit | Yes | Use the Action-column icons on the row (eye / pencil / trash) — permitted for this role.
+Delete | Yes | Use the Action-column icons on the row (eye / pencil / trash) — permitted for this role.
+Purpose: Read the practice’s contact details and the active CCM / RPM program windows.
+Actor | Practice Admin
+Navigation Path | Dashboard › Practice
+Preconditions | A practice profile has been created by Super Admin / System Admin.
+Outcome | Primary Contact (Facility, Email, Phone 1/2, Fax, Status) and the Program Dates table (Program, Start date, End date, Days) are visible in read-only mode.
+[Screenshot placeholder]
+Figure 14.1.1-1 — Practice — read the practice’s contact details and the active CCM / RPM program windows.
+Steps
+Confirm Practice Tab: On the Dashboard, ensure the Practice tab (first in the tab bar) is selected (highlighted dark navy).
+Read Primary Contact: Read the Primary Contact card: Facility, Email, Phone 1, Phone 2, Fax and the Status pill (Active shown in green).
+Read Program Dates: Read the Program Dates table for each enrolled program (CCM / RPM) with Start date, End date and the derived Days remaining in the billing window.
+Scroll to Monitoring Details: Scroll below Primary Contact to the Monitoring Details card and read each flag (e.g. “Do you want eVitals to Monitor your patients”, “Buying Device”).
+Notes
+Practice contact and monitoring details are managed by Super Admin / System Admin; Practice Admin has read-only view here.
+A red Status pill (Inactive) blocks new device orders, uploads and billing until reactivated.
+Buying Device = Yes means the practice purchases devices outright; No means eVitals leases devices for the program.
+
+14. Practice Admin | 14.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click the Providers tab.
+Add | Yes | Click + Add Providers (top-right); enter Name, credentials, NPI, Address, Home Phone, Cell Phone, Fax, Email…
+Edit | Yes | Use the view / edit / delete icons per row.
+Delete | Yes | Use the view / edit / delete icons per row.
+Search / filter / sort | Yes | Use the Search providers… box or All Status filter to narrow the list.
+Purpose: See and register every provider (physician / NP) attached to the practice.
+Actor | Practice Admin
+Navigation Path | Dashboard › Providers
+Preconditions | At least one provider is on-boarded to the practice.
+Outcome | Providers table displays Status, Name, Address, Home Phone, Cell Phone, Fax, Email and Action icons; a new provider appears in the list and can be assigned as the ordering / billing provider for patients.
+[Screenshot placeholder]
+Figure 14.1.3-1 — Providers — see and register every provider (physician / NP) attached to the practice.
+Steps
+Open Providers Tab: Click the Providers tab.
+Search or Filter Providers: Use the Search providers… box or All Status filter to narrow the list.
+Sort Providers List: Click column headers to sort ascending / descending.
+Add a Provider: Click + Add Providers (top-right); enter Name, credentials, NPI, Address, Home Phone, Cell Phone, Fax, Email and Username, set Status, then Save.
+View, Edit, or Delete Provider: Use the view / edit / delete icons per row.
+Notes
+Providers are the billing / signing clinicians; they must exist before patients can be assigned to them under Patients.
+Provider email drives system notifications (missed uploads, follow-ups) and must be unique.
+
+14. Practice Admin | 14.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Patient summary cards and the patient grid for the assigned practice.
+Add | Yes | Add Patient opens the enrolment wizard.
+Edit | Yes | Pencil icon edits demographics; eye icon opens the patient dashboard.
+Delete | Yes | Trash icon removes a patient record.
+Switch RPM / CCM view | Yes | Toggle at the top-right of the Patients tab.
+Filter by cohort | Yes | Click a summary card to filter the grid.
+Purpose: Get a same-page overview of enrolment, activity, quality and CPT-billing status.
+Actor | Practice Admin
+Navigation Path | Dashboard › Patients
+Preconditions | The practice has at least one enrolled patient.
+Outcome | Five summary cards are shown: Total Patient (with A/P/L chips), Recent Uploads (last 24 hours), Missed Uploads (older than 24 hours), Abnormal Readings (needs review) and CPT Billing (per-code counts with target ratios). The RPM billing date range is shown top-right.
+[Screenshot placeholder]
+Figure 14.1.5-1 — Patients — get a same-page overview of enrolment, activity, quality and CPT-billing status.
+Steps
+Open Patients Tab: Click the Patients tab.
+Review Summary Cards: Review Total Patient, Recent Uploads, Missed Uploads, Abnormal Readings and CPT Billing.
+Filter by Cohort: Click a summary card to filter the patient grid to that cohort.
+Switch RPM / CCM View: Use the toggle at the top-right of the grid to switch between RPM and CCM patients.
+Add, Edit, or Delete Patient: Use + Add Patient to enrol a new patient (see 15.2 for the full wizard), the pencil icon to edit demographics, the eye icon to open the patient dashboard, or the trash icon to remove a record.
+Notes
+The RPM billing date range shown top-right reflects the practice’s current RPM program window.
+
+14. Practice Admin | 14.2. Patient Mgmt (Patient Management)
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click Patient Mgmt, then Lookup Patient (by CCM date).
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Search / filter / sort | Yes | Click Query.
+Export / print | Yes | Use Print / Export / Email to distribute the report.
+Purpose: Pull the CCM patient population within a service date range along with chronic conditions and billing status.
+Actor | Practice Admin
+Navigation Path | Sidebar › Patient Mgmt › Lookup Patient (by CCM date)
+Preconditions | The practice has CCM patients with enrolment dates.
+Outcome | The results table lists #, Status, Patient Name, DOB, Chronic Conditions, Enrollment Date, Last Activity, Service Time, Eligible CPT Codes and Billing status (Pending / Billed).
+[Screenshot placeholder]
+Figure 14.2.4-1 — Lookup Patient by CCM Date — pull the CCM patient population within a service date range along with chronic….
+Steps
+Open CCM Lookup: Click Patient Mgmt, then Lookup Patient (by CCM date).
+Enter CCM Date Range: Enter the CCM Service Date Range (Start ~ End).
+Run the Query: Click Query.
+Sort CCM Results: Sort by Enrollment Date (default), Patient Name or Last Activity.
+Distribute the Report: Use Print / Export / Email to distribute the report.
+Reset Date Range: Click Reset to clear the range.
+Notes
+Chronic Conditions lists every condition captured on the CCM enrolment step — at least two are required for CCM billing.
+Billing = Pending means the current cycle has not yet been submitted; Billed indicates the claim has been filed for the window.
+
+15. Provider | 
+The Provider is the clinician role at a practice. A Provider reviews patient vitals, enrols and edits patients, manages the practice's calendar, and signs off on billing. Roster tabs that belong to practice administration (Practice, Admins, other Providers) are visible to the Provider for reference, but they cannot be changed from this role.
+Role privileges at a glance
+Page / Module | View | Add | Edit | Delete
+Practice profile | Yes | No | No | No
+Practice Admins | Yes | No | No | No
+Providers (peer roster) | Yes | No | No | No
+Practice Caregivers | Yes | No | Conditional | No
+Patients | Yes | Yes | Yes | No
+System Caregivers | Yes | No | No | No
+RPM tab | Yes | No | No | No
+Schedule & Targets | Yes | N/A | Yes | No
+Import Patients | Yes | Yes | No | No
+Patient Management | Yes | Yes | Yes | No
+Care Management | Yes | No | No | No
+Calendar | Yes | Yes | Yes | Yes
+Messages | Yes | Yes | No | No
+Account Settings | Yes | N/A | Yes | No
+Navigation for the Provider role has two layers. The Dashboard opens a row of tabs (Practice, Admins, Providers, Caregivers, Patients, System Caregivers, RPM, Schedule & Targets, Import Patients) that all describe the current practice. The left sidebar (Patient Mgmt, Care Mgmt, Calendar, Messages, Settings) holds the Provider's own day-to-day tools. This manual follows that same left-to-right, top-to-bottom order.
+
+15. Provider | 15.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | From the Dashboard, make sure the Practice tab is selected — it is the default tab.
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Purpose: Review the practice's contact details, monitoring configuration, and CCM / RPM program windows.
+Actor | Provider
+Navigation Path | Dashboard  ›  Practice tab
+Preconditions | The Provider is logged in and viewing the assigned practice.
+Outcome | The Primary Contact card (Facility, Email, Phone 1, Phone 2, Fax, Status), the Program Dates table (Program, Start date, End date, Days) and the Monitoring Details panel are displayed as read-only.
+[Screenshot placeholder]
+Figure 15.1.1-1 — Practice — review the practice's contact details, monitoring configuration, and CCM / RPM program windows.
+Steps
+Confirm the Practice tab is open: From the Dashboard, make sure the Practice tab is selected — it is the default tab.
+Review the Primary Contact card: Check the Facility address, Email, Phone 1, Phone 2, Fax and Status (Active / Inactive).
+Review the Program Dates table: Check the CCM and RPM rows — each shows the program's Start date, End date and the number of Days in the current billing cycle.
+Scroll to Monitoring Details: Review the answers to “Do you want eVitals to Monitor your patients” and “Buying Device”.
+Notes
+This tab is read-only for a Provider. Updates to the facility, phone numbers or program dates are made by an Admin or System Admin.
+Status = Active means the practice is billable in the current cycle; Inactive suppresses new billing events.
+The “Days” column is the length of the current billing-cycle window, not the days remaining in it.
+
+15. Provider | 15.1. Practice List
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Patients tab in both RPM and CCM views, with summary cards, CPT counters and service time.
+Add | Yes | Add Patient opens the same enrolment wizard described under Patient Management.
+Edit | Yes | The pencil icon edits demographics; the eye icon opens the patient dashboard.
+Delete | No | Delete is not exposed to a Provider.
+Review readings | Yes | Open trend views from the vitals chips and heart icons.
+Switch RPM / CCM view | Yes | Toggle at the top-right of the Patients tab.
+15.1.5.1. Review the RPM Patient List
+Purpose: Review the RPM patient population for the current billing window, with a vitals summary, upload activity and CPT-code progression.
+Actor | Provider
+Navigation Path | Dashboard  ›  Patients tab  ›  RPM toggle selected
+Preconditions | The practice has RPM patients enrolled and at least one active RPM billing cycle.
+Outcome | The RPM view shows the RPM Billing Dates window (top-right), five summary cards (Total Patient, Recent Uploads, Missed Uploads, Abnormal Readings, CPT Billing), and a patient grid with Status, Vitals (BP / BG / WT chips), Name, Systolic, Diastolic, Pulse, Glucose, Weight, Last Upload, # Readings, Time and Action icons.
+[Screenshot placeholder]
+Figure 15.1.5-1 — Patients tab, RPM view, with summary cards and the patient grid.
+Steps
+Open the Patients tab in RPM view: Click the Patients tab. If the RPM toggle (top-right, blue) is not already selected, click RPM.
+Note the billing window: Note the RPM Billing Dates window shown top-right (for example 07-01-2026 to 07-30-2026).
+Read the summary cards: Read Total Patient (with A / P / L status chips), Recent Uploads (last 24 hours), Missed Uploads (older than 24 hours), Abnormal Readings (needs review), and CPT Billing (99453 / 99454 / 99457 counters showing eligible vs. total).
+Filter by a summary card: Click a card's “click to view all” link to filter the grid to that cohort.
+Filter the grid further: Use the Search patients by name… box and the All Status dropdown.
+Sort by name: Sort the grid by Name using the header arrow.
+Review each patient row: Review the chip badges (BP / BG / WT — a chip shows the patient is monitored for that vital), the latest Systolic / Diastolic / Pulse / Glucose / Weight readings, the Last Upload date, the # Readings in the current window, and the accumulated review Time.
+Open a reading trend: Red numbers mark out-of-target readings (for example a diastolic reading of 111.00 shown in red). Click the heart icon next to a value to open its trend / detail view.
+Add a patient: Click Add Patient (top-right) to enrol a new patient — this opens the same wizard covered under Patient Management.
+Open or edit a patient: Use the eye icon in Action to open the patient dashboard, or the pencil icon to edit demographics.
+Notes
+CPT Billing reflects current-cycle eligibility — for example, CPT 99454 requires at least 16 upload days within the 30-day window.
+The status chip A / P / L stands for Active / Paused / Lost-to-follow-up; chip colours match the row status.
+The Time column feeds CPT 99457 (first 20 minutes) and 99458 (each additional 20 minutes) — see the CPT Billing card for real-time eligibility.
+15.1.5.2. Review the CCM Patient List
+Purpose: Review the CCM patient population for the current CCM cycle, with care-plan status, chronic conditions and billing state.
+Actor | Provider
+Navigation Path | Dashboard  ›  Patients tab  ›  CCM toggle
+Preconditions | The practice has CCM-enrolled patients.
+Outcome | The CCM view shows the CCM Billing Dates window (top-right), summary cards for Total Patients, Active Care Plan, Complex Care Plan, Items Pending Review, and CPT Billing (99490 / 99491 / 99439 counters), plus a grid with Status, Patient Name, DOB, Chronic Conditions, Last Activity, Service Time, Billing and Action icons.
+[Screenshot placeholder]
+Figure 15.1.5-2 — Patients tab, CCM view, with care-plan and billing status.
+Steps
+Switch to CCM view: Click Patients, then click the CCM toggle (top-right, next to RPM).
+Note the CCM billing window: Note the CCM Billing Dates window (for example 06-30-2026 to 07-24-2026).
+Review the CCM summary cards: Review Total Patients (with A / P / L chips), Active Care Plan (provider-approved plans), Complex Care Plan (attested complex CCM), Items Pending Review (care-plan changes awaiting sign-off), and CPT Billing (99490 / 99491 / 99439 with eligible vs. total counters).
+Jump to items pending review: Click Items Pending Review, then “click to view all”, to go straight to plans awaiting Provider approval.
+Sort and filter the grid: Sort the grid by Patient Name and filter with Search patients by name… and the All Status dropdown.
+Review each row's details: Review DOB, Chronic Conditions, Last Activity, Service Time (accumulated CCM minutes) and Billing state (Pending / Billed).
+Add or edit a CCM patient: Click Add Patient to enrol a new CCM patient, or use the eye / pencil action icons to open or edit an existing one.
+Return to the RPM view: Toggle back to RPM using the RPM chip at the top-right when finished.
+Notes
+Billing = Pending means the CCM claim for the current cycle has not yet been submitted; Billed means it has been filed.
+A CCM patient needs two or more chronic conditions to be billable under CPT 99490.
+“Items Pending Review” is the Provider's CCM inbox — clearing it is required before billing the cycle.
+
+15. Provider | 15.2. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | The enrolment wizard is opened from Patient Mgmt → Add New Patient.
+Add | Yes | Complete Steps 1–3 and click Save Patient to create the patient record.
+Edit | Yes | Any field can be changed with Previous / Next while the wizard is open.
+Delete | No | Cancel discards the draft; a saved patient is removed from the Patients grid.
+Search / filter / sort | Not applicable | The wizard has no grid to search.
+Purpose: Enroll a new patient through the three-step “Let’s enroll the patient” wizard — Demographics, Programs, then RPM Device & Insurance. Each step is described below; the wizard only saves the patient once the final step is submitted.
+15.2.1.1. Add a New Patient — Step 1: Demographics
+Purpose: Capture the patient's personal information, account credentials, care-team assignments and communication preferences.
+Actor | Provider
+Navigation Path | Patient Management  ›  Add New Patient
+Preconditions | The Provider has the patient's consent to enrol them.
+Outcome | A demographics record is staged and the wizard advances to Step 2 (Programs).
+[Screenshot placeholder]
+Figure 15.2.1-1 — “Let's enroll the patient” wizard, Demographics step.
+Steps
+Open Add New Patient: From the Patient Mgmt flyout, click Add New Patient. The “Let's enroll the patient” modal opens on Step 1, Demographics.
+Pick a title: Under Personal Information, pick a Title (Mr / Mrs / Ms / Dr / –).
+Enter the patient's name: Enter First Name and Last Name (both required) and an optional Middle Name.
+Pick gender and birth date: Pick Gender (required) and enter Date Of Birth (required, mm/dd/yyyy).
+Enter the SSN: Enter the SSN (required) using the 000-00-0000 mask.
+Enter phone numbers: Enter Home Phone and Cell Phone (both required) and, optionally, Fax.
+Set username and password: Scroll to Account Credentials. The platform proposes a username — adjust it if needed — and set a temporary password; the patient is prompted to change it on first login.
+Enter the home address: Scroll to Address and enter Street, City, State and ZIP.
+Assign the Provider and Caregivers: Under Care Team & Settings, pick the Provider (defaults to the signed-in Provider) and one or more Caregivers who will monitor the patient.
+Set language and time zone: Set the Preferred Language and Time Zone so reminders arrive at the correct local time.
+Set notification preferences: Toggle the SMS and Email notification preferences.
+Advance to Programs: Click Next to advance to Step 2 (Programs), or Cancel to discard the form.
+Notes
+The SSN is stored encrypted at rest; only the last four digits are shown in the UI after saving.
+The three-step wizard progress bar (Demographics, Programs, RPM) is clickable, but Next must be used at least once to unlock each later step.
+First Name, Last Name, Gender, Date of Birth, SSN, Home Phone and Cell Phone are required — Next stays disabled until all are valid.
+15.2.1.2. Add a New Patient — Step 2: Programs
+Purpose: Enrol the patient into CCM, RPM, or both; choose chronic conditions; and set the care-plan cadence.
+Actor | Provider
+Navigation Path | Add New Patient wizard  ›  Step 2 – Programs
+Preconditions | Step 1 (Demographics) has been completed.
+Outcome | The patient is flagged for the selected programs. If RPM is chosen the wizard advances to Step 3 (RPM); otherwise the wizard finishes and the patient appears in the Patients grid.
+Steps
+Toggle CCM enrolment: On Step 2, toggle CCM to enrol the patient in Chronic Care Management.
+Pick chronic conditions: If CCM is on, pick two or more Chronic Conditions from the list — a minimum of two is required for CPT 99490 billing.
+Choose the care-plan type: Choose the Care Plan Type (Standard / Complex) and the review cadence.
+Toggle RPM enrolment: Toggle RPM to enrol the patient in Remote Patient Monitoring.
+Pick vitals to monitor: If RPM is on, pick the vitals to monitor — Blood Pressure, Blood Glucose, Weight. Each ticked vital shows a chip on the Patients grid.
+Advance or save: Click Next to move to Step 3 (RPM) when RPM is enabled, or Save to finish if only CCM is enabled.
+Return to Demographics: Use Back to return to Step 1 to correct demographics.
+Notes
+At least one program (CCM or RPM) must be enabled to proceed.
+Chronic Conditions can be added or removed later from the patient profile without unenrolling the patient.
+The RPM vital selection determines which target sets apply — BP uses the Systolic / Diastolic / Pulse targets, Glucose uses the meal-time targets, and Weight uses the Weight / BMI targets configured under Schedule & Targets.
+15.2.1.3. Add a New Patient — Step 3: RPM Device & Insurance
+Purpose: Bind the patient's cellular meter(s) to their record and capture the insurance details required for RPM billing.
+Actor | Provider
+Navigation Path | Add New Patient wizard  ›  Step 3 – RPM
+Preconditions | Step 2 has RPM enabled.
+Outcome | The meter serial(s) are bound to the patient, insurance is captured, and the patient appears in the Patients grid with the correct vital chips and billing eligibility.
+Steps
+Choose the meter model: On Step 3, choose the Meter Model for each selected vital (BP cuff, Glucometer, Scale).
+Enter the meter serial number: Enter the 16-character Meter Serial Number — the field validates length and uniqueness.
+Enter the model number: Enter the Model # exactly as printed on the device.
+Set the RPM start date: Set the RPM Start Date — this drives the billing window and the CPT 99453 setup claim.
+Enter insurance details: Enter the primary insurance — Carrier, Member ID, Group, Plan Type — and optional secondary insurance.
+Capture patient consent: Capture the Patient Consent method (Verbal / Written) and the consent date.
+Save the patient: Click Save to finish the wizard. The modal closes and the new patient appears in the Patients grid.
+Return to Programs: Use Back to return to Step 2 to change the program selections.
+Notes
+A serial number already bound to another patient is rejected — the meter must be unassigned first.
+The RPM Start Date sets the beginning of the current 30-day billing window; the Practice tab's Program Dates table reflects it immediately.
+For dual-program patients, the CCM enrolment date is captured separately on Step 2 — the two programs bill on independent cycles.
+
+15. Provider | 15.2. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click Patient Mgmt, then Lookup Patient (by RPM date).
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Search / filter / sort | Yes | Use the Search box to keyword-filter the loaded rows.
+Export / print | Yes | Click Print to open the print dialog, Export to download CSV / Excel, or Email to send the report to a…
+Purpose: Report on RPM patients for a chosen service-date window, with meter identifiers, upload activity, service time and eligible CPT codes.
+Actor | Provider
+Navigation Path | Patient Mgmt  ›  Lookup Patient (by RPM date)
+Preconditions | At least one RPM patient has activity in the requested date window.
+Outcome | The grid shows Status, Vitals chips, Patient Name, DOB, Model #, Serial #, RPM Start Date, Upload Date/Time, Measurement Days, Service Time and Eligible CPT Codes, and can be printed, exported or emailed.
+[Screenshot placeholder]
+Figure 15.2.3-1 — Lookup Patient (by RPM date), with export toolbar.
+Steps
+Open the RPM lookup: Click Patient Mgmt, then Lookup Patient (by RPM date).
+Pick the RPM date range: Under RPM Service Date Range, pick the start date and end date (mm/dd/yyyy).
+Run or reset the report: Click Query to run the report, or Reset to clear the date range.
+Keyword-filter results: Use the Search box to keyword-filter the loaded rows.
+Sort the results: Sort by RPM Start Date, or any other header, using the column arrow.
+Print, export, or email: Click Print to open the print dialog, Export to download CSV / Excel, or Email to send the report to a recipient.
+Notes
+Measurement Days is the count of distinct upload days in the window — it drives CPT 99454 eligibility (16 or more days are required).
+Eligible CPT Codes is a live calculation across 99453 (setup), 99454 (device supply), 99457 (first 20 minutes) and 99458 (each additional 20 minutes).
+A dash in Model # or Serial # means the meter binding is not complete yet — fix this on the patient profile before billing.
+
+15. Provider | 15.2. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click Patient Mgmt, then Lookup Patient (by CCM date).
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Search / filter / sort | Yes | Click Query to run the search; use Reset to clear it.
+Export / print | Yes | Click Print, Export or Email to distribute the report.
+Purpose: Report on CCM patients for a chosen service-date window, with chronic conditions, enrolment date, last activity, service time, eligible CPT codes and billing state.
+Actor | Provider
+Navigation Path | Patient Mgmt  ›  Lookup Patient (by CCM date)
+Preconditions | At least one CCM patient has activity in the requested date window.
+Outcome | The grid shows Status, Patient Name, DOB, Chronic Conditions, Enrollment Date, Last Activity, Service Time, Eligible CPT Codes and Billing (Pending / Billed).
+[Screenshot placeholder]
+Figure 15.2.4-1 — Lookup Patient (by CCM date), with billing column.
+Steps
+Open the CCM lookup: Click Patient Mgmt, then Lookup Patient (by CCM date).
+Pick the CCM date range: Pick the CCM Service Date Range — start and end date.
+Run or reset the query: Click Query to run the search; use Reset to clear it.
+Keyword-filter results: Use the Search box to keyword-filter the loaded rows.
+Sort the results: Sort by Enrollment Date, or any other header, using the column arrow.
+Distribute the report: Click Print, Export or Email to distribute the report.
+Notes
+Billing = Pending means the CCM cycle for that patient has not yet been submitted; Billed means the claim is filed.
+Eligible CPT Codes reflects 99490 (first 20 minutes), 99439 (each additional 20 minutes) and 99491 (physician-provided CCM), based on Service Time and provider type.
+Chronic Conditions must total two or more for a patient to be billable under CPT 99490.
+
+16. Practice Caregiver | 
+The Practice Caregiver runs day-to-day monitoring and follow-up for the patients of a single practice. Unlike the Provider role, a Practice Caregiver's dashboard has no Practice / Admins / Providers tabs — the sidebar leads straight to Patient Mgmt, Care Mgmt, Messages and Settings.
+Role privileges at a glance
+Page / Module | View | Add | Edit | Delete
+Patient Management | Yes | Yes | Yes | No
+Care Management | Yes | No | No | No
+Messages | Yes | Yes | No | No
+Account Settings | Yes | N/A | Yes | No
+Practice users (Admins / Providers) | No | No | No | No
+A Practice Caregiver is a practice-employed clinician who monitors enrolled patients, runs follow-up queries, coordinates by messaging, and maintains their own account settings. This workspace does not include Admins, Providers, Inventory, Billing, Calendar, Programs or Permissions modules.
+
+16. Practice Caregiver | 16.1. Practice (Caregiver Dashboard)
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Practice header, summary cards and the patient grid; the eye icon opens a patient dashboard.
+Add | Yes | + Add Patient (top-right) starts the three-step enrolment wizard described in 17.2.1.
+Edit | Yes | The pencil icon in the Action column opens the patient’s demographics for editing.
+Delete | No | Patients cannot be deleted by this role.
+Switch practice | No | Only the single assigned practice is shown — there is no Practices List and no practice switcher.
+Roster tabs | Not available | Practice, Admins, Providers, Caregivers, System Caregivers, Schedule & Targets and Import Patients are not exposed to a Practice Caregiver.
+Purpose: Open the Practice Caregiver dashboard, which lands directly on the one practice the caregiver is assigned to and lists that practice’s enrolled patients with their latest vitals, upload activity and service time.
+Actor | Practice Caregiver
+Navigation Path | Sidebar › Dashboard
+Preconditions | The Practice Caregiver is signed in and is assigned to exactly one practice.
+Outcome | The practice header (practice name, RPM and CCM enrolment counts, billing-date window), the five summary cards (Total Patient, Recent Uploads, Missed Uploads, Abnormal Readings, CPT Billing) and the patient grid are displayed.
+[Screenshot placeholder]
+Figure 16.1-1 — Practice Caregiver dashboard: single practice, summary cards and the patient grid.
+Steps
+Open the Dashboard: Click Dashboard at the top of the left sidebar. The caregiver’s assigned practice (for example “Amir Mobile Test Practice”) opens directly — there is no practice-selection step for this role.
+Read the practice header: Confirm the practice name and the two program counters beneath it — Remote patient monitoring and Chronic care management — and the BILLING DATES block (top-right) showing the current RPM window, e.g. 07-27-2026 – 08-26-2026.
+Review the summary cards: Read Total Patient (with the A / P / L status chips), Recent Uploads (last 24 hours), Missed Uploads (more than 2 days), Abnormal Readings (last 24 hours) and CPT Billing (99453, 99445, 99454 with their counters and a “+3 more” link).
+Drill into a card: Click click to view all on any card to filter the patient grid to that population, or +3 more · click to view all on the CPT Billing card to see every code.
+Switch between RPM and CCM: Use the RPM and CCM buttons to the right of the search box to change which program’s patients the grid lists.
+Search and filter: Type into Search patients by name… and use the All Status dropdown to narrow the list to Active, Pending or Left patients.
+Read the patient grid: Review the columns #, Status, Vitals (BP / BG / WT chips), Name, Systolic, Diastolic, Pulse, Glucose, Weight, Last Upload, Readings, Service Time (Min) and Action. Out-of-range values are shown in red or amber and a heart icon flags an abnormal reading.
+Sort the list: Click a column header (for example Name) to sort ascending or descending; the arrow shows the active sort.
+Open a patient: Click the patient’s name (blue link) or the eye icon in the Action column to open the patient dashboard with vitals trends, readings and notes.
+Edit a patient: Click the pencil icon in the Action column to open the patient’s demographics and program details for editing.
+Add a patient: Click + Add Patient (top-right) to start the three-step enrolment wizard — see 17.2.1.
+Notes
+The Practice Caregiver sidebar has five entries only — Dashboard, Patient Mgmt, Care Mgmt, Messages and Settings. Calendar and the practice-administration tabs belong to the Practice Admin and Provider roles.
+Status chips on the Total Patient card read A = Active, P = Pending and L = Left / inactive.
+Service Time (Min) accumulates toward the CPT time thresholds, and Readings feeds the 16-reading requirement for 99454 in the current billing window.
+N/A in a vitals column means no reading has been received for that vital in the current window; a value in Last Upload with N/A vitals usually means a partial upload.
+A red dot on Patient Mgmt or Care Mgmt in the sidebar signals unread items — missed uploads, abnormal readings or follow-ups awaiting review.
+
+16. Practice Caregiver | 16.2. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click Patient Mgmt, then Lookup Patient (by CCM date). The CCM Service Date Range picker appears.
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Search / filter / sort | Yes | Sort by Enrollment Date (the default sort) or any other header. Filter loaded rows with the Search box.
+Export / print | Yes | Use Print / Export / Email to distribute the roster. Reset clears filters and results.
+Purpose: List CCM-enrolled patients whose CCM service window falls in a chosen range, with billing status per row.
+Actor | Practice Caregiver
+Navigation Path | Patient Mgmt  ›  Lookup Patient (by CCM date)
+Preconditions | At least one patient has CCM activity in the queried range.
+Outcome | A dated CCM roster shows chronic conditions, enrolment date, last activity, service time, eligible CPT codes and billing state.
+[Screenshot placeholder]
+Figure 16.2.4-1 — Lookup Patient (by CCM date), with billing column.
+Steps
+Open the CCM lookup: Click Patient Mgmt, then Lookup Patient (by CCM date). The CCM Service Date Range picker appears.
+Pick the date range and query: Pick the From / To dates and click Query. The grid renders #, Status, Patient Name, DOB, Chronic Conditions, Enrollment Date, Last Activity, Service Time, Eligible CPT Codes and Billing.
+Sort or filter results: Sort by Enrollment Date (the default sort) or any other header. Filter loaded rows with the Search box.
+Distribute the roster: Use Print / Export / Email to distribute the roster. Reset clears filters and results.
+
+17. System Caregiver | 
+The System Caregiver is employed by eVitals and serves several practices at once. The role is read-only over patient records and works mainly through lookups, follow-up queries and messages.
+Role privileges at a glance
+Page / Module | View | Add | Edit | Delete
+Assigned practices | Yes | No | No | No
+Patient Management | Yes | No | No | No
+Care Management | Yes | No | No | No
+Messages | Yes | Yes | No | No
+Account Settings | Yes | N/A | Yes | No
+Practice users (Admins / Providers) | No | No | No | No
+A System Caregiver is a cross-practice clinical user assigned by the System / Super Admin to monitor patients across one or more practices. The workspace is a read-and-monitor surface: an assigned-practices list, Patient Management lookups, Care Management follow-ups, Messages and Settings. A System Caregiver does not manage admins, providers, inventory, billing, calendar, programs or permissions. The assigned-practices list, and the privileges that apply to it, are described in 17.1.
+
+17. System Caregiver | 17.2. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click Patient Mgmt, then Lookup Patient (by RPM date). The RPM Service Date Range filter appears with two…
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Search / filter / sort | Yes | Click Patient Mgmt, then Lookup Patient (by RPM date). The RPM Service Date Range filter appears with two…
+Export / print | Yes | Use Print, Export or Email to distribute the roster. Reset clears the range and results.
+Purpose: List RPM-enrolled patients whose RPM service falls within a chosen date range, with billing-relevant detail.
+Actor | System Caregiver
+Navigation Path | Patient Mgmt  ›  Lookup Patient (by RPM date)
+Preconditions | At least one patient at an assigned practice has an RPM start date in the queried range.
+Outcome | A dated RPM roster is available on-screen and can be printed, exported or emailed.
+[Screenshot placeholder]
+Figure 17.2.3-1 — Lookup Patient (by RPM date), with export toolbar.
+Steps
+Open the RPM lookup: Click Patient Mgmt, then Lookup Patient (by RPM date). The RPM Service Date Range filter appears with two date pickers.
+Pick the date range and query: Pick the From and To dates and click Query — the grid shows #, Status, Vitals, Patient Name, DOB, Model #, Serial #, RPM Start Date, Upload Date/Time, Measurement Days, Service Time and Eligible CPT Codes.
+Sort or filter results: Sort by any column using the header arrow; use the top-right Search box to filter loaded rows.
+Distribute the roster: Use Print, Export or Email to distribute the roster. Reset clears the range and results.
+
+17. System Caregiver | 17.2. Patient Management
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Click Patient Mgmt, then Lookup Patient (by CCM date). The CCM Service Date Range picker appears.
+Add | No | No create control on this screen — records are added elsewhere.
+Edit | No | The screen is read-only for this role.
+Delete | No | No delete control on this screen.
+Search / filter / sort | Yes | Sort by Enrollment Date (the default sort) or any other header. Filter loaded rows with the Search box.
+Export / print | Yes | Use Print / Export / Email to distribute the roster; Reset clears filters and results.
+Purpose: List CCM-enrolled patients whose CCM service window falls in a chosen range, with billing status per row.
+Actor | System Caregiver
+Navigation Path | Patient Mgmt  ›  Lookup Patient (by CCM date)
+Preconditions | At least one patient at an assigned practice has CCM activity in the queried range.
+Outcome | A dated CCM roster shows chronic conditions, enrolment date, last activity, service time, eligible CPT codes and billing state.
+[Screenshot placeholder]
+Figure 17.2.4-1 — Lookup Patient (by CCM date). The empty state reads “No patients found.”
+Steps
+Open the CCM lookup: Click Patient Mgmt, then Lookup Patient (by CCM date). The CCM Service Date Range picker appears.
+Pick the date range and query: Pick From / To dates and click Query — the grid renders #, Status, Patient Name, DOB, Chronic Conditions, Enrollment Date, Last Activity, Service Time, Eligible CPT Codes and Billing.
+Sort or filter results: Sort by Enrollment Date (the default sort) or any other header. Filter loaded rows with the Search box.
+Distribute the roster: Use Print / Export / Email to distribute the roster; Reset clears filters and results.
+Notes
+The “No patients found” state indicates no rows match the selected date range.
+

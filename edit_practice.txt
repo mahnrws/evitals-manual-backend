@@ -1,0 +1,50 @@
+12. Super Admin | 12.2. Enrollment — Add & Configure a Practice
+Privileges for this role
+Action | Permitted | Where / How
+View | Yes | Enrollment form, practice settings and care-program billing cycles.
+Add | Yes | + Add Practice creates the practice and its primary contact.
+Edit | Yes | Update practice settings and billing cycle dates, then Save.
+Delete | No | Practices are deactivated rather than deleted.
+Purpose: Enrollment is where new practices are provisioned on eVitals. A single scrollable form captures Practice Detail, Admin Detail, Practice Settings, and Care Program Billing Cycles.
+Actor | Super Admin
+Access Path | Sidebar → Enrollment → + Add Practice
+Purpose: Provision a new practice and its first admin in one form.
+Preconditions | You have the practice's tax ID, primary address, and the intended admin's email.
+Outcome | A new practice appears in the Practice List; the admin receives a welcome email.
+Steps
+Navigate to Add Practice: Sidebar → Enrollment → + Add Practice.
+Fill Practice Details: Fill Practice Detail: name, type, status, tax ID, email, address.
+Fill Admin Details: Fill Admin Detail: first/last name, email, phone, username, password (meeting criteria), 2FA toggle.
+Choose Email Preferences: Under Practice Settings, choose Email Notification preferences.
+Set Billing Cycle Dates: Under Care Program Billing Cycles, set RPM and CCM start date, billing cycle length (days), and end date.
+Save Practice: Click Save.
+[Screenshot placeholder]
+Figure 12.2-1 — Add Practice: Practice Detail & Admin Detail.
+Purpose: Turn on transactional email notifications for the practice.
+Steps
+Scroll to Practice Settings: On the Add / Edit Practice form, scroll to the Practice Settings panel.
+Review Password Criteria: Confirm the length, case, digit and symbol rules shown live under the password field.
+Set Two-Factor Authentication: Turn the 2FA toggle on to require an OTP at every admin sign-in.
+Choose Email Notifications: Enable the enrollment, billing and alert emails the practice should receive.
+[Screenshot placeholder]
+Figure 12.2-2 — Practice Settings and password criteria.
+UI Reference
+Field / Control | Description
+Password Criteria | Length, case, digit, and symbol requirements enforced live.
+2FA | Toggle to require OTP on every sign-in for the admin.
+Email Notifications | Toggles for enrollment, billing, and alert emails.
+Purpose: Bind RPM and CCM billing windows to the practice.
+Steps
+Scroll to Care Program Billing Cycles: On the Add / Edit Practice form, scroll to the billing cycle panel.
+Set the RPM Cycle: Enter the RPM start date and cycle length in days; the end date is computed for you.
+Set the CCM Cycle: Repeat for CCM if the practice is enrolled in that program.
+Save the Practice: Click Save to persist the practice and its billing cycles.
+[Screenshot placeholder]
+Figure 12.2-3 — Care Program Billing Cycles and Save action.
+UI Reference
+Field / Control | Description
+Start Date | First day of the billing cycle for that program.
+Days | Cycle length (e.g. 30).
+End Date | Auto-computed from Start Date + Days.
+Save / Cancel | Persist the practice or discard.
+
