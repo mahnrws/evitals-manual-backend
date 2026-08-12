@@ -1,7 +1,7 @@
 # eVitals Documentation RAG Backend
 
 QUESTIONS ANSWERED FOR TESTING 
-=== FACTUAL LOOKUPS ===
+
 1. What is the exact character length required for a Meter Serial Number?
 2. What are the four CPT codes associated with RPM?
 3. What are the three CPT codes associated with CCM?
